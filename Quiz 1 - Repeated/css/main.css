@@ -1,0 +1,85 @@
+/*********   Page Reset    *******/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+/*********   Page General    *******/
+@font-face{
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-Regular.ttf');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-Bold.ttf');
+    font-weight: 700ss;
+}
+:root{
+    --White:  hsl(0, 0%, 100%); 
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+body{
+    background-color: var(--Light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+}
+/*********   Main    *******/
+main{
+    background-color: var(--White);
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 18px 20px ;
+    border-radius: 25px;
+}
+main img{
+    border-radius: 25px;
+    margin-bottom: 1em;
+}
+main h1{
+    font-size: 23px;
+    margin-bottom: 1em;
+}
+main h1 span{
+    text-transform: capitalize;
+}
+main p{
+    font-size: 18px;
+    color: var(--Grayish-blue);
+}
+main p span:first-child{
+    text-transform: capitalize;
+}
+main p span:nth-child(2){
+    text-transform: uppercase;
+}
+main p span:nth-child(3){
+    text-transform: capitalize;
+}
+footer{
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+}
+footer a{
+    color: blue;
+}
